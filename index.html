@@ -15,15 +15,15 @@
       <!-- right to left - Arabic -->
     <link href="css/bootstrap.rtl.css" rel="stylesheet">
       
+    <link href="css/register-style.css" rel="stylesheet">
       <!-- Arabic Font -->
       <link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Harmattan" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
   </head>
   <body class="text-center">
-
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
+      <header class="masthead" >
         <div class="inner">
           <h3 class="masthead-brand">تـكرار</h3>
           <nav class="nav nav-masthead justify-content-center">
@@ -33,13 +33,256 @@
           </nav>
             <main role="main" class="inner cover">
         <h2 class="cover-heading">تكـرار لتحفيظ القرآن الكريم</h2>
-        <p class="lead">​​​يهدف نظام تكرار إلى تسجيل بيانات جمعيات تحفيظ القرآن و معالجة بيانات الطلاب</p>
+        <p class="lead">
+            يهدف نظام تكرار إلى تسجيل بيانات جمعيات تحفيظ القرآن و معالجة بيانات الطلاب</p>
             </main>
         </div>
       </header>
 
-      <main role="main" class="inner cover">
+      <main role="main" class="container">
+        <div class="row">
+          <div class="" style="margin: 0 auto;">
+             <div class="form-body panel-login">
+                <ul class="nav nav-tabs final-login panel-heading">
+                <li ><a id="login-form-link" data-toggle="tab" href="#sectionA">دخــول</a></li>
+                <li ><a id="register-form-link" data-toggle="tab" href="#sectionB">تسـجيـل</a></li>
+                </ul>
+              
+          	<hr style="font-weight: bold;">
+                    
+            <div class="tab-content">
+                 <!-- End Login section A -->
+               <div id="sectionA" class="tab-pane fade in active ">
+                   <div class="innter-form ">
+                        <form class="sa-innate-form " method="post">
+                            <div class="form-row">
+                            <div class="col-12 form-group ">
+                            <label>رقم الهوية/الأقامة <span class="important">*</span></label>
+                            <input type="text" class="form-control"  name="id" maxlength="10">
+                            </div>
+                            
+                            <div class="col-12 form-group ">
+                            <label>رقم السري</label>
+                            <input type="password" class="form-control" name="password">
+                            </div>
+                             
+                            <button class="col-12 form-group btn btn-primary" type="submit"><span style="font-size: 20px;font-family: Lalezar">دخـول</span></button>
+                            <a href="">نسيت الرقم السري؟</a>
+                            </div>
+                        </form>
+                   </div>
+                </div> 
+                <!-- End Login section A -->
+                <!--  #######################################->
+                <!-- Start section B-->
+                <div id="sectionB" class="tab-pane fade in active">
+                    <div class="innter-form">
+
+                        <form class="sa-innate-form" method="post">
+                <div class="form-row">
+                    
+            <div class="col-6 form-group col-lg-3 col-md-4 col-md-offset-4 ">
+            <label>أسم المستخدم<span class="important">*</span></label>
+            <input type="text" class="form-control" name="username" placeholder="خالد الاحمد">
+            </div>
+                
+            <div class="col-6 form-group col-lg-3 col-md-4 col-md-offset-4 col-sm-6">
+            <label>رقم الهوية/الأقامة <span class="important">*</span></label>
+            <input type="text" class="form-control"  name="id" maxlength="10">
+            </div>
+                    
+            <div class="col-6 form-group col-lg-3 col-md-4 col-md-offset-4 col-sm-6">
+            <label >رقم الجوال <span class="important">*</span></label>
+            <input type="text" class="form-control" name="phone" placeholder="05xxxxxxxx" maxlength="10">
+            </div>
+           
+            <div class="col-6 form-group col-lg-3 col-md-4 col-md-offset-4">
+            <label style="margin-bottom: 7px">البريد الألكتروني <span class="important">*</span></label>
+            <input type="email" class="form-control"  name="email" placeholder="email@example.com">
+            </div>
+            
+            <div class="col-6 form-group col-lg-3 col-md-4 col-md-offset-4 ">
+            <label style="margin-bottom: 7px">الـعمر<span class="important">*</span></label>
+            <input type="number" min="0" max="120" class="form-control" name="username" placeholder="خالد الاحمد">
+            </div>
+                    
+            <div class="col-6 form-group col-lg-3 col-md-4 col-md-offset-4 ">
+            <label>المؤهل العلـمي <span class="important">*</span></label>
+            <select class="form-control" id="exampleFormControlSelect1">
+            <option value="">اختر...</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            </select>
+            </div>
+            
+            <div class="col-6 form-group col-lg-3 col-md-4 col-md-offset-4 ">
+            <label>المنـطـقـة </label>
+            <select class="form-control" id="exampleFormControlSelect1">
+            <option value="">اختر...</option>
+            <option value="1">الرس</option>
+            <option value="2">شقراء</option>
+            <option value="3">النماص</option>
+            <option value="4">بلجرشي</option>
+            <option value="5">املج</option>
+            <option value="6">بارق </option>
+            <option value="7">العويقلية</option>
+            <option value="8">سلوى</option>
+            <option value="9"> عنك</option>
+            <option value="10">حوطة بني تميم</option>
+            <option value="11">الرماح</option>
+            <option value="12">ضبا</option>
+            <option value="13">وادي الدواسر</option>
+            <option value="14">صبيا</option>
+            <option value="15">حوطة سدير</option>
+            <option value="16">الباحة</option>
+            <option value="17">الوجه</option>
+            <option value="18">صفوى</option>
+            <option value="19">تاروت</option>
+            <option value="20">العلا</option>
+            <option value="21">رابغ</option>
+            <option value="22">القيصومة</option>
+            <option value="23">المذنب</option>
+            <option value="24">خيبر</option>
+            <option value="25">طبرجل</option>
+            <option value="26">القنفذة</option>
+            <option value="27"> محايل عسير</option>
+            <option value="28">الدمام</option>
+            <option value="29">الدوادمي</option>
+            <option value="30">الواديين</option>
+            <option value="31">البدائع</option>
+            <option value="32">قرية العليا</option>
+            <option value="33">رفحة </option>
+            <option value="34">الاحساء</option>
+            <option value="35">الهياثم </option>
+            <option value="36">المزاحمية</option>
+            <option value="37">الطائف</option>
+            <option value="38">عفيف</option>
+            <option value="39">بيشة</option>
+            <option value="40">رأس تنورة</option>
+            <option value="41">طريف</option>
+            <option value="42">البيكيرية</option>
+            <option value="43">أحد رفيدة</option>
+            <option value="44">عرعر</option>
+            <option value="45">الذيبية</option>
+            <option value="46">بقيق</option>
+            <option value="47">مدينة العيون</option>
+            <option value="48">القويعية</option>
+            <option value="49">حرمة</option>
+            <option value="50">الدلم</option>
+            <option value="51">الضبيعة</option>
+            <option value="52">القطيف</option>
+            <option value="53">المجمعة </option>
+            <option value="54">دومة الجندل</option>
+            <option value="55">أبها</option>
+            <option value="56">خليص</option>
+            <option value="57">شرورة</option>
+            <option value="58">الظهران</option>
+            <option value="59">مدينة الملك عبد الله الاقتصادية</option>
+            <option value="60">الخرج</option>
+            <option value="61">المدينة المنورة</option>
+            <option value="62">نجران</option>
+            <option value="63">ينبع</option>
+            <option value="64">تبوك</option>
+            <option value="65">مكة المكرمة</option>
+            <option value="66">سيهات </option>
+            <option value="67">الخبر</option>
+            <option value="68">الخفجي</option>
+            <option value="69">المبرز</option>
+            <option value="70">الجبيل</option>
+            <option value="71">خميس مشيط</option>
+            <option value="72">جده</option>
+            <option value="73">الهفوف</option>
+            <option value="74">النعيرية</option>
+            <option value="75">القريات </option>
+            <option value="76">الزلفي</option>
+            <option value="77">رياض الخبراء</option>
+            <option value="78">الرياض</option>
+            <option value="79">أبوعريش</option>
+            <option value="80">جازان</option>
+            <option value="81">عنيزة</option>
+            <option value="82">حفر الباطن</option>
+            <option value="83">سكاكا</option>
+            <option value="84">حائل</option>
+            <option value="85">بريدة</option>
+            </select>        
+            </div>
+                    
+            <div class="col-6 form-group col-lg-3 col-md-4 col-md-offset-4 ">
+            <label>الـحـي</label>
+            <input type="text" class="form-control" name="area">
+            </div>  
+                    
+            <div class="col-6 form-group col-lg-3 col-md-4 col-md-offset-4 ">
+            <label>الجـنسـية<span class="important">*</span></label>
+            <select class="form-control" id="exampleFormControlSelect1">
+            <option>اختر...</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            </select> 
+            </div>
+            
+            <div class="col-6 form-group col-lg-3 col-md-4 col-md-offset-4 ">
+            <label>المهـنـة <span class="important">*</span></label>
+            <input type="text" class="form-control" name="job">
+            </div>
         
+            <div class="col-6 form-group col-lg-3 col-md-4 col-md-offset-4 ">
+            <label style="margin-bottom: 7px">الحالة الأجتماعية <span class="important">*</span></label>
+            <div class="controls">
+                <input name="status" id="status-0" value="married" checked="checked" type="radio">
+                <label class="radio inline col-4" for="status-0" style="padding-right: 0">متـزوج </label>
+                
+                <input name="status" id="status-1" value="single" type="radio">
+                <label class="radio inline col-4" for="status-1" style="padding-right: 0"> اعـزب  </label>
+              </div>
+            </div>
+                    
+            <div class="col-6 form-group col-lg-3 col-md-4 col-md-offset-4 ">
+            <label>مقدرة الحفظ (عموماٌ)</label>
+            <input type="text" class="form-control" name="generalsave">
+            </div>
+              
+            <div class="col-6 form-group col-lg-3 col-md-4 col-md-offset-4 ">
+            <label>مقدرة الحفظ (المتـقـن)</label>
+            <input type="text" class="form-control" name="specificsave">
+            </div>
+            
+             
+                    
+            <div class="col-6 form-group col-lg-3 col-md-4 col-md-offset-4 ">
+            <label>البرامج المرتبطة بها</label>
+            <input type="text" class="form-control" name="specificsave">
+            </div>
+                    
+            <div class="col-6 form-group col-lg-3 col-md-4 col-md-offset-4 ">
+            <label>رقم السري</label>
+            <input type="password" class="form-control" name="password">
+            </div>
+         </div>       
+            
+            <p>بـضغـطك على تسجيل,أنت توافق على الشروط والاحكام.</p>
+                
+            <button class="col-12 btn btn-success" type="submit"><span style="font-size: 20px;font-family: Lalezar">تـسـجيــل</span></button>
+            
+            </form>
+            
+                    </div>
+                </div>
+                
+                <!-- END section B-->
+                
+            </div>
+                    <!-- END tab-Content -->
+              
+        </div>
+      </div>
+    </div>
       </main>
 
         <!-- FOOTER -->
@@ -58,5 +301,6 @@
     <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/register.js"></script>
   </body>
 </html>
